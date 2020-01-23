@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap");
+
+@font-face {
+  font-family: "Netflix-bold";
+  src: url("https://res.cloudinary.com/duoxba7n1/raw/upload/v1579754765/Netflix_Sans_Bold.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Netflix-light";
+  src: url("https://res.cloudinary.com/duoxba7n1/raw/upload/v1579754765/Netflix_Sans_Light.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Netflix-medium";
+  src: url("https://res.cloudinary.com/duoxba7n1/raw/upload/v1579754765/Netflix_Sans_Medium.otf")
+    format("opentype");
+}
+
+// Font variables
+$font-light: "Netflix-light", serif;
+$font-bold: "Netflix-bold", serif;
+$font-medium: "Netflix-medium", serif;
+$lg-font: "Luckiet Guy", cursive;
+
+// Color variables
+$bg-light: #e5e5e5;
+$bg-dark: #31323b;
+$link-color: #5458f7;
+$light-font: #efefef;
+
+html {
+  --primary-color: #31323b;
+  --secondary-color: #e5e5e5;
+  --font-color: #ffffff;
+}
+
+html[data-theme="light"] {
+  --primary-color: #e5e5e5;
+  --secondary-color: #31323b;
+  --font-color: $bg-dark;
+}
+
+body {
+  font-family: $font-light;
+  background: var(--primary-color);
+  color: var(--font-color);
+}
