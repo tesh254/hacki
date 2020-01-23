@@ -1,0 +1,33 @@
+@import "../scss/variables";
+
+nav {
+    font-family: $font-bold;
+}
+
+a.navbar-item:first-child:hover {
+    background: none;
+}
+
+a.navbar-item:hover  {
+    background: $link-color !important;
+}
+
+.navbar-item:last-child:hover {
+    background: none;
+    font-family: $font-bold;
+}
+
+// Footer styling
+.footer  {
+    margin-top: 100vh;
+    background: var(--third-color);
+    color: var(--font-color);
+
+    div {
+        p {
+            a {
+                color: $link-color; 
+            }
+        }
+    }
+}

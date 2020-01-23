@@ -32,18 +32,24 @@ $light-font: #efefef;
 
 html {
   --primary-color: #31323b;
-  --secondary-color: #e5e5e5;
+  --secondary-color: #ffffff;
   --font-color: #ffffff;
+  --nav-color: #616164;
+  --third-color: #000;
 }
 
 html[data-theme="light"] {
-  --primary-color: #e5e5e5;
+  --primary-color: #fff;
   --secondary-color: #31323b;
   --font-color: $bg-dark;
+  --nav-color: #e5e5e5;
+  --third-color: #fff;
 }
 
-body {
+html, body {
   font-family: $font-light;
   background: var(--primary-color);
   color: var(--font-color);
+  margin: 0;
+  padding: 0
 }
